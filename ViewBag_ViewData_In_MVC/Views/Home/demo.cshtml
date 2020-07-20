@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>demo</title>
+</head>
+<body>
+    <div>
+
+        @ViewData["Data"]
+    </div>
+    
+    <hr />
+    <ul>
+        @foreach (var item in  (List<string>) ViewData["Listdata"])
+        {
+            <li> @item</li>
+        }
+    </ul>
+    <hr />
+</body>
+</html>
